@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.info-panel {
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.score-display {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.score-display span {
+    padding: 5px 15px;
+}
+
+#current-score, #best-score, #level {
+    color: #ffd700;
+    font-size: 24px;
+}
+
+.controls-info {
+    font-size: 14px;
+    opacity: 0.9;
+    padding: 5px;
+}
+
+canvas {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background: #2d3436;
+}
+
+@media (max-width: 768px) {
+    .score-display {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .controls-info p {
+        font-size: 12px;
+    }
+}
